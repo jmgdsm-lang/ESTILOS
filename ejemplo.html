@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amazon Style Demo</title>
+  <link rel="stylesheet" href="amazon-style.css">
+</head>
+<body>
+
+  <nav class="amz-navbar">
+    <div class="amz-navbar-logo">
+      amazon<span>.</span>es
+    </div>
+    <div class="amz-navbar-search">
+      <select>
+        <option>Todas las categorías</option>
+        <option>Electrónica</option>
+        <option>Hogar</option>
+        <option>Libros</option>
+      </select>
+      <input type="text" placeholder="Buscar productos...">
+      <button>🔍</button>
+    </div>
+    <div class="amz-navbar-links">
+      <a href="#">Hola, <strong>Usuario</strong></a>
+      <a href="#">Devoluciones <strong>& Pedidos</strong></a>
+      <a href="#"><strong>🛒 Carrito</strong></a>
+    </div>
+  </nav>
+
+  <div class="amz-container" style="margin-top: 24px;">
+
+    <!-- Header -->
+    <div class="amz-flex-between amz-mb-4">
+      <h1 style="font-size: 24px;">Componentes Amazon</h1>
+      <div class="amz-flex amz-gap-2">
+        <span class="amz-badge amz-badge-prime">Prime</span>
+        <span class="amz-badge amz-badge-sale">Oferta</span>
+        <span class="amz-badge amz-badge-new">Nuevo</span>
+        <span class="amz-badge amz-badge-stock">En stock</span>
+        <span class="amz-badge amz-badge-out">Agotado</span>
+      </div>
+    </div>
+
+    <!-- Botones -->
+    <section class="amz-card amz-mb-4">
+      <h2 class="amz-card-title amz-mb-3">Botones</h2>
+      <div class="amz-flex amz-gap-3 amz-flex-wrap">
+        <button class="amz-btn">Botón normal</button>
+        <button class="amz-btn amz-btn-primary">Añadir al carrito</button>
+        <button class="amz-btn amz-btn-secondary">Ver detalles</button>
+        <button class="amz-btn amz-btn-sm">Pequeño</button>
+        <button class="amz-btn amz-btn-lg amz-btn-primary">Grande</button>
+      </div>
+    </section>
+
+    <!-- Links & texto -->
+    <section class="amz-card amz-mb-4">
+      <h2 class="amz-card-title amz-mb-3">Links y colores de texto</h2>
+      <p class="amz-mb-2"><a href="#" class="amz-link">Este es un link estilo Amazon</a></p>
+      <p class="amz-mb-2 amz-text-primary">Texto primario (#111111)</p>
+      <p class="amz-mb-2 amz-text-secondary">Texto secundario (#565959)</p>
+      <p class="amz-mb-2 amz-text-muted">Texto muted (#999999)</p>
+      <p class="amz-mb-2 amz-text-blue">Texto azul Amazon (#007185)</p>
+      <p class="amz-mb-2 amz-text-orange">Texto naranja Amazon (#FF9900)</p>
+      <p class="amz-mb-2 amz-text-red">Texto rojo oferta (#B12704)</p>
+    </section>
+
+    <!-- Precios -->
+    <section class="amz-card amz-mb-4">
+      <h2 class="amz-card-title amz-mb-3">Precios</h2>
+      <p class="amz-mb-2">
+        <span class="amz-price-original">$49.99</span>
+        <span class="amz-price-sale">$<span class="amz-price-currency">29</span><span class="amz-price-decimal">99</span></span>
+      </p>
+      <p>
+        <span class="amz-price">$<span class="amz-price-currency">15</span><span class="amz-price-decimal">99</span></span>
+        <span class="amz-stars-count amz-ml-2">(2,345 valoraciones)</span>
+      </p>
+    </section>
+
+    <!-- Estrellas -->
+    <section class="amz-card amz-mb-4">
+      <h2 class="amz-card-title amz-mb-3">Estrellas de rating</h2>
+      <div class="amz-flex amz-gap-3">
+        <div>
+          <div class="amz-stars">★★★★★</div>
+          <span class="amz-stars-count">5.0 (1,234)</span>
+        </div>
+        <div>
+          <div class="amz-stars">★★★★☆</div>
+          <span class="amz-stars-count">4.0 (892)</span>
+        </div>
+        <div>
+          <div class="amz-stars">★★★☆☆</div>
+          <span class="amz-stars-count">3.0 (456)</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tarjetas de producto -->
+    <section class="amz-mb-4">
+      <h2 class="amz-card-title amz-mb-3">Tarjetas de producto</h2>
+      <div class="amz-grid">
+        <div class="amz-card">
+          <div style="background: #f0f0f0; height: 200px; border-radius: 4px; margin-bottom: 12px; display: flex; align-items: center; justify-content: center; color: #999;">📷 200x200</div>
+          <span class="amz-badge amz-badge-prime amz-mb-2">Prime</span>
+          <h3 class="amz-card-title">
+            <a href="#" class="amz-link">Auriculares inalámbricos Bluetooth 5.3</a>
+          </h3>
+          <div class="amz-stars amz-mb-2">★★★★☆ <span class="amz-stars-count">(1,234)</span></div>
+          <p class="amz-mb-2 amz-text-secondary" style="font-size: 12px;">200+ comprados este mes</p>
+          <p class="amz-mb-2">
+            <span class="amz-price-original">$59.99</span>
+            <span class="amz-price-sale">$<span class="amz-price-currency">39</span><span class="amz-price-decimal">99</span></span>
+          </p>
+          <p class="amz-mb-3 amz-text-secondary" style="font-size: 12px;">Envío gratis <strong>mañana</strong></p>
+          <button class="amz-btn amz-btn-block">Añadir al carrito</button>
+        </div>
+
+        <div class="amz-card">
+          <div style="background: #f0f0f0; height: 200px; border-radius: 4px; margin-bottom: 12px; display: flex; align-items: center; justify-content: center; color: #999;">📷 200x200</div>
+          <span class="amz-badge amz-badge-sale amz-mb-2">-40%</span>
+          <h3 class="amz-card-title">
+            <a href="#" class="amz-link">Smartwatch deportivo con GPS</a>
+          </h3>
+          <div class="amz-stars amz-mb-2">★★★★★ <span class="amz-stars-count">(3,456)</span></div>
+          <p class="amz-mb-2">
+            <span class="amz-price-original">$199.99</span>
+            <span class="amz-price-sale">$<span class="amz-price-currency">119</span><span class="amz-price-decimal">99</span></span>
+          </p>
+          <p class="amz-mb-3 amz-text-secondary" style="font-size: 12px;">Solo quedan 5 unidades</p>
+          <button class="amz-btn amz-btn-primary amz-btn-block">Comprar ahora</button>
+        </div>
+
+        <div class="amz-card">
+          <div style="background: #f0f0f0; height: 200px; border-radius: 4px; margin-bottom: 12px; display: flex; align-items: center; justify-content: center; color: #999;">📷 200x200</div>
+          <span class="amz-badge amz-badge-new amz-mb-2">Nuevo</span>
+          <h3 class="amz-card-title">
+            <a href="#" class="amz-link">Teclado mecánico RGB inalámbrico</a>
+          </h3>
+          <div class="amz-stars amz-mb-2">★★★★☆ <span class="amz-stars-count">(567)</span></div>
+          <p class="amz-mb-2">
+            <span class="amz-price">$<span class="amz-price-currency">89</span><span class="amz-price-decimal">99</span></span>
+          </p>
+          <button class="amz-btn amz-btn-block">Añadir al carrito</button>
+        </div>
+
+        <div class="amz-card">
+          <div style="background: #f0f0f0; height: 200px; border-radius: 4px; margin-bottom: 12px; display: flex; align-items: center; justify-content: center; color: #999;">📷 200x200</div>
+          <h3 class="amz-card-title">
+            <a href="#" class="amz-link">Funda para portátil 15.6" impermeable</a>
+          </h3>
+          <div class="amz-stars amz-mb-2">★★★☆☆ <span class="amz-stars-count">(234)</span></div>
+          <p class="amz-mb-2">
+            <span class="amz-price">$<span class="amz-price-currency">24</span><span class="amz-price-decimal">99</span></span>
+          </p>
+          <p class="amz-mb-3 amz-badge amz-badge-out">Agotado</p>
+          <button class="amz-btn amz-btn-secondary amz-btn-block" disabled style="opacity: 0.5; cursor: not-allowed;">Sin stock</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Utilitarias: fondos -->
+    <section class="amz-card amz-mb-4">
+      <h2 class="amz-card-title amz-mb-3">Fondos</h2>
+      <div class="amz-flex amz-gap-3">
+        <div class="amz-p-4 amz-bg-dark amz-text-white" style="border-radius: 4px;">dark (#131921)</div>
+        <div class="amz-p-4 amg-bg-dark-secondary amz-text-white" style="border-radius: 4px;">dark-secondary (#232F3E)</div>
+        <div class="amz-p-4 amz-bg-light" style="border-radius: 4px; border: 1px solid var(--amz-border);">light (#EAEDED)</div>
+        <div class="amz-p-4 amz-bg-white" style="border-radius: 4px; border: 1px solid var(--amz-border);">white (#FFF)</div>
+      </div>
+    </section>
+
+    <!-- Grid responsive -->
+    <section class="amz-card amz-mb-4">
+      <h2 class="amz-card-title amz-mb-3">Grid responsive</h2>
+      <div class="amz-grid">
+        <div class="amz-p-3 amz-bg-light" style="border: 1px solid var(--amz-border); border-radius: 4px;">Item 1</div>
+        <div class="amz-p-3 amz-bg-light" style="border: 1px solid var(--amz-border); border-radius: 4px;">Item 2</div>
+        <div class="amz-p-3 amz-bg-light" style="border: 1px solid var(--amz-border); border-radius: 4px;">Item 3</div>
+        <div class="amz-p-3 amz-bg-light" style="border: 1px solid var(--amz-border); border-radius: 4px;">Item 4</div>
+      </div>
+      <p class="amz-text-muted amz-mt-2">auto-fill, min 250px por columna</p>
+    </section>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="amz-footer">
+    <div class="amz-footer-backtotop">
+      <a href="#">Volver al principio</a>
+    </div>
+    <div class="amz-footer-grid">
+      <div class="amz-footer-col">
+        <h3>Conócenos</h3>
+        <a href="#">Trabajar en Amazon</a>
+        <a href="#">Sobre Amazon.es</a>
+        <a href="#">Sostenibilidad</a>
+      </div>
+      <div class="amz-footer-col">
+        <h3>Gana dinero</h3>
+        <a href="#">Vender en Amazon</a>
+        <a href="#">Publica tu libro</a>
+        <a href="#">Afiliados</a>
+      </div>
+      <div class="amz-footer-col">
+        <h3>Atención al cliente</h3>
+        <a href="#">Devoluciones</a>
+        <a href="#">Centro de ayuda</a>
+        <a href="#">Envíos</a>
+      </div>
+      <div class="amz-footer-col">
+        <h3>Métodos de pago</h3>
+        <a href="#">Tarjetas de crédito</a>
+        <a href="#">PayPal</a>
+        <a href="#">Amazon Points</a>
+      </div>
+    </div>
+    <div class="amz-footer-bottom">
+      &copy; 2026 Amazon Style Demo &mdash; Hoja de estilos inspirada en Amazon
+    </div>
+  </footer>
+
+</body>
+</html>
